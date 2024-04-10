@@ -3,7 +3,7 @@ class Solution:
         
         def can_place_flower(flowerbed, n, position):
             
-            # avoid "list index out of range"......
+            # To avoid "list index out of range"......
             if n == 0:
                 return True
             if position >= len(flowerbed):
@@ -19,7 +19,7 @@ class Solution:
             else:
                 return can_place_flower(flowerbed, n, position + 1)
 
-        # strat point
+        # start point
         return can_place_flower(flowerbed, n, 0)
                     
                     
